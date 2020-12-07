@@ -14,7 +14,7 @@ import helpers.InitializeDrivers;
 import helpers.TextFileUtility;
 
 @CucumberOptions(strict = true, monochrome = true, features = "resources/features", glue = "stepDefinition", plugin = {
-		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Test2" }, dryRun = false)
+		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Test" }, dryRun = false)
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 

@@ -1,7 +1,7 @@
-Feature: Get Weather Details
+Feature: Get Weather Details from API
 
-  @Test2
-  Scenario Outline: Pin city and fetch weather details
+  @Test
+  Scenario Outline: Fetch weather details from API
     Given user launches the API with "<City>"
 
     Examples: 

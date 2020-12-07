@@ -4,17 +4,16 @@
     "elements": [
       {
         "line": 9,
-        "name": "Pin city and fetch weather details",
+        "name": "Fetch weather details from API",
         "description": "",
-        "id": "get-weather-details;pin-city-and-fetch-weather-details;;2",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1916237100,
-              "error_message": "java.lang.AssertionError: expected [200] but found [401]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:372)\r\n\tat org.testng.Assert.assertEquals(Assert.java:382)\r\n\tat stepMethods.APIStepMethods.launchAPI(APIStepMethods.java:21)\r\n\tat stepDefinition.APIStepDefinition.userLaunchesTheAPIWith(APIStepDefinition.java:13)\r\n\tat ✽.Given user launches the API with \"Kanpur\"(Phase2.feature:5)\r\n",
-              "status": "failed"
+              "duration": 4924541700,
+              "status": "passed"
             },
             "line": 5,
             "name": "user launches the API with \"Kanpur\"",
@@ -41,10 +40,48 @@
         ]
       }
     ],
-    "name": "Get Weather Details",
+    "name": "Get Weather Details from API",
     "description": "",
-    "id": "get-weather-details",
+    "id": "get-weather-details-from-api",
     "keyword": "Feature",
     "uri": "Phase2.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Compare the temperature result of UI \u0026 API",
+        "description": "",
+        "id": "temperature-comparator;compare-the-temperature-result-of-ui-\u0026-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5879600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user compares the result of API \u0026 UI",
+            "match": {
+              "location": "TemperatureComparatorStepDefinition.userComparesTheResultOfAPIUI()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test2"
+          }
+        ]
+      }
+    ],
+    "name": "Temperature Comparator",
+    "description": "",
+    "id": "temperature-comparator",
+    "keyword": "Feature",
+    "uri": "Phase3.feature"
   }
 ]

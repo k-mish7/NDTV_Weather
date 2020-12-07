@@ -1,6 +1,6 @@
-Feature: Get Weather Details
+Feature: Get Weather Details from UI
 
-  @Test1
+  @Test
   Scenario Outline: Pin city and fetch weather details
     Given user opens NDTV website
     And user reach the weather section of the website
