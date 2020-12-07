@@ -3,18 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 5399300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "LaunchURLStepDefinition.before(Scenario)"
-            }
-          }
-        ],
-        "line": 11,
+        "line": 12,
         "name": "Pin city and fetch weather details",
         "description": "",
         "id": "get-weather-details;pin-city-and-fetch-weather-details;;2",
@@ -23,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23184086200,
+              "duration": 22832593200,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1523326400,
+              "duration": 981123000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 414375300,
+              "duration": 487330400,
               "status": "passed"
             },
             "line": 7,
@@ -68,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 92386500,
+              "duration": 464793600,
               "status": "passed"
             },
             "line": 8,

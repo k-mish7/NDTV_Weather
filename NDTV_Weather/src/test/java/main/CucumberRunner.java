@@ -50,6 +50,8 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		String userDirectory = System.getProperty("user.dir");
 		GlobalVariables._baseUrl = TextFileUtility
 				.returnConfigPropertyValue(userDirectory + envConfig.getProperty("envUrl"));
+		GlobalVariables._weatherURL = TextFileUtility
+				.returnConfigPropertyValue(userDirectory + envConfig.getProperty("WeatherURL"));
 	}
 
 	public void setEnv() throws Exception {

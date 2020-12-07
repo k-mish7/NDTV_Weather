@@ -41,7 +41,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 9,
+  "line": 10,
   "name": "",
   "description": "",
   "id": "get-weather-details;pin-city-and-fetch-weather-details;",
@@ -50,25 +50,21 @@ formatter.examples({
       "cells": [
         "City"
       ],
-      "line": 10,
+      "line": 11,
       "id": "get-weather-details;pin-city-and-fetch-weather-details;;1"
     },
     {
       "cells": [
         "Kanpur"
       ],
-      "line": 11,
+      "line": 12,
       "id": "get-weather-details;pin-city-and-fetch-weather-details;;2"
     }
   ],
   "keyword": "Examples"
 });
-formatter.before({
-  "duration": 5399300,
-  "status": "passed"
-});
 formatter.scenario({
-  "line": 11,
+  "line": 12,
   "name": "Pin city and fetch weather details",
   "description": "",
   "id": "get-weather-details;pin-city-and-fetch-weather-details;;2",
@@ -111,14 +107,14 @@ formatter.match({
   "location": "LaunchURLStepDefinition.userLaunchBrowser()"
 });
 formatter.result({
-  "duration": 23184086200,
+  "duration": 22832593200,
   "status": "passed"
 });
 formatter.match({
   "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
 });
 formatter.result({
-  "duration": 1523326400,
+  "duration": 981123000,
   "status": "passed"
 });
 formatter.match({
@@ -131,7 +127,7 @@ formatter.match({
   "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
 });
 formatter.result({
-  "duration": 414375300,
+  "duration": 487330400,
   "status": "passed"
 });
 formatter.match({
@@ -144,7 +140,7 @@ formatter.match({
   "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
 });
 formatter.result({
-  "duration": 92386500,
+  "duration": 464793600,
   "status": "passed"
 });
 });

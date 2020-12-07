@@ -2,12 +2,23 @@ package helpers;
 
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.CucumberRunner;
 
 public class SeleniumCustomMethods extends CucumberRunner {
 
 	ObjectMap objMap = new ObjectMap();
+
+	public void waitForVisibilityOfElementExplicitly(String elementName, int timeInSeconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+			wait.until(ExpectedConditions.presenceOfElementLocated(objMap.getLocator(elementName)));
+		} catch (Exception e) {
+
+		}
+	}
 
 	public String getTextOfElement(WebElement element) {
 		return element.getText();
