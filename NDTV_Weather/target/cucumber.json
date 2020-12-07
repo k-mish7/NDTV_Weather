@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "line": 12,
+        "line": 9,
         "name": "Pin city and fetch weather details",
         "description": "",
         "id": "get-weather-details;pin-city-and-fetch-weather-details;;2",
@@ -12,75 +12,31 @@
         "steps": [
           {
             "result": {
-              "duration": 22832593200,
-              "status": "passed"
+              "duration": 1916237100,
+              "error_message": "java.lang.AssertionError: expected [200] but found [401]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:496)\r\n\tat org.testng.Assert.assertEquals(Assert.java:125)\r\n\tat org.testng.Assert.assertEquals(Assert.java:372)\r\n\tat org.testng.Assert.assertEquals(Assert.java:382)\r\n\tat stepMethods.APIStepMethods.launchAPI(APIStepMethods.java:21)\r\n\tat stepDefinition.APIStepDefinition.userLaunchesTheAPIWith(APIStepDefinition.java:13)\r\n\tat ✽.Given user launches the API with \"Kanpur\"(Phase2.feature:5)\r\n",
+              "status": "failed"
             },
             "line": 5,
-            "name": "user opens NDTV website",
+            "name": "user launches the API with \"Kanpur\"",
             "match": {
-              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+              "arguments": [
+                {
+                  "val": "Kanpur",
+                  "offset": 28
+                }
+              ],
+              "location": "APIStepDefinition.userLaunchesTheAPIWith(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 981123000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user reach the weather section of the website",
-            "match": {
-              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 487330400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user searches and selects any \"Kanpur\" with temperature information",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Kanpur",
-                  "offset": 31
-                }
-              ],
-              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 464793600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user verifies that selecting particular \"Kanpur\" reveals the weather details",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Kanpur",
-                  "offset": 41
-                }
-              ],
-              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "line": 3,
-            "name": "@Test1"
+            "name": "@Test2"
           }
         ]
       }
@@ -89,6 +45,6 @@
     "description": "",
     "id": "get-weather-details",
     "keyword": "Feature",
-    "uri": "Phase1.feature"
+    "uri": "Phase2.feature"
   }
 ]

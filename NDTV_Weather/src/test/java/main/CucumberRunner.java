@@ -14,7 +14,7 @@ import helpers.InitializeDrivers;
 import helpers.TextFileUtility;
 
 @CucumberOptions(strict = true, monochrome = true, features = "resources/features", glue = "stepDefinition", plugin = {
-		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Test1" }, dryRun = false)
+		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Test2" }, dryRun = false)
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 
@@ -29,9 +29,9 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 
 	@AfterSuite(alwaysRun = true)
 	public void quit() throws IOException {
-//		if (driver != null) {
-//			driver.quit();
-//		}
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 	public void initiateSetup() throws Exception {
@@ -52,6 +52,8 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 				.returnConfigPropertyValue(userDirectory + envConfig.getProperty("envUrl"));
 		GlobalVariables._weatherURL = TextFileUtility
 				.returnConfigPropertyValue(userDirectory + envConfig.getProperty("WeatherURL"));
+		GlobalVariables._sourceAPI = TextFileUtility
+				.returnConfigPropertyValue(userDirectory + envConfig.getProperty("sourceAPI"));
 	}
 
 	public void setEnv() throws Exception {
