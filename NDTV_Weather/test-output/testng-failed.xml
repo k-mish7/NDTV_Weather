@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testng Cucumber Suite]" parallel="tests">
+  <test name="Run All Tests(failed)" parallel="tests">
+    <classes>
+      <class name="main.CucumberRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="quit"/>
+          <include name="setUp"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- main.CucumberRunner -->
+    </classes>
+  </test> <!-- Run All Tests(failed) -->
+</suite> <!-- Failed suite [Testng Cucumber Suite] -->

@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5399300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LaunchURLStepDefinition.before(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Pin city and fetch weather details",
+        "description": "",
+        "id": "get-weather-details;pin-city-and-fetch-weather-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23184086200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1523326400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414375300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Kanpur\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kanpur",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92386500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Kanpur\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kanpur",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test1"
+          }
+        ]
+      }
+    ],
+    "name": "Get Weather Details",
+    "description": "",
+    "id": "get-weather-details",
+    "keyword": "Feature",
+    "uri": "Phase1.feature"
+  }
+]
