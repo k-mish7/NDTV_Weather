@@ -5,6 +5,9 @@ Feature: Get Weather Details from API
     Given user launches the API with "<City>"
 
     Examples: 
-      | City   |
-      | Kanpur |
-      |Amritsar|
+      | City        |
+      | Amritsar    |
+      | Bhubaneswar |
+      | Jaipur      |
+      | Kanpur      |
+      | Pune        |

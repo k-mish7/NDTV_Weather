@@ -8,6 +8,9 @@ Feature: Get Weather Details from UI
     Then user verifies that selecting particular "<City>" reveals the weather details
 
     Examples: 
-      | City     |
-      | Kanpur   |
-      | Amritsar |
+      | City        |
+      | Amritsar    |
+      | Bhubaneswar |
+      | Jaipur      |
+      | Kanpur      |
+      | Pune        |

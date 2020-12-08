@@ -9,9 +9,9 @@ public class SearchAndSelectCityStepMethod extends SeleniumCustomMethods {
 	public void searchSelectCity(String city) {
 		clearText(getElement("searchBox"));
 		typeText(getElement("searchBox"), city);
-		waitForVisibilityOfElementExplicitly("cityKanpur", 1);
-		clickElement(getElement("cityKanpur"));
-		waitForVisibilityOfElementExplicitly("verifyCityKanpur", 1);
-		Assert.assertEquals(getTextOfElement(getElement("verifyCityKanpur")), "Kanpur");
+		waitForVisibilityOfElementExplicitly("citySelection", city, 2);
+		clickElement(getElement("citySelection", city));
+		waitForVisibilityOfElementExplicitly("verifyCity", city, 2);
+		Assert.assertEquals(getTextOfElement(getElement("verifyCity", city)), city);
 	}
 }
