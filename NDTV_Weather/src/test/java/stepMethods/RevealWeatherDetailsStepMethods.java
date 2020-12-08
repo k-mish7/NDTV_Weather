@@ -8,15 +8,18 @@ import helpers.SeleniumCustomMethods;
 public class RevealWeatherDetailsStepMethods extends SeleniumCustomMethods {
 
 	public void revealWeatherDetails(String city) {
-		clickElement(getElement("verifyCityKanpur"));
-		waitForVisibilityOfElementExplicitly("verifyWeatherDetails", 2);
-		Assert.assertEquals(getTextOfElement(getElement("verifyWeatherDetails")), "Kanpur, Uttar Pradesh");
+		clickElement(getElement("verifyCity", city));
+		//waitForVisibilityOfElementExplicitly("verifyWeatherDetails", city, 2);
+		waitForElementToBeClickable("verifyWeatherDetails", city, 2);
+		System.out.println(
+				getTextOfElement(getElement("verifyWeatherDetails", city)).toLowerCase().contains(city.toLowerCase()));
+		Assert.assertTrue(
+				getTextOfElement(getElement("verifyWeatherDetails", city)).toLowerCase().contains(city.toLowerCase()));
 		String tempCelsius = getTextOfElement(getElement("tempDegreesUI"));
 		String tempFahrenheit = getTextOfElement(getElement("tempFahrenheitUI"));
 		double tempDegreesCelsius = Double.valueOf(tempCelsius.split(":")[1].trim());
 		double tempDegreesFahrenheit = Double.valueOf(tempFahrenheit.split(":")[1].trim());
 		GlobalVariables._mapUI.put(city, tempDegreesCelsius);
-		GlobalVariables._mapUI.put(city, tempDegreesFahrenheit);
 		System.out.println(GlobalVariables._mapUI);
 	}
 

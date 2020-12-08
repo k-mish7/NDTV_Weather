@@ -20,6 +20,24 @@ public class SeleniumCustomMethods extends CucumberRunner {
 		}
 	}
 
+	public void waitForVisibilityOfElementExplicitly(String elementName, String replace, int timeInSeconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+			wait.until(ExpectedConditions.presenceOfElementLocated(objMap.getLocator(elementName, replace)));
+		} catch (Exception e) {
+
+		}
+	}
+
+	public void waitForElementToBeClickable(String elementName, String replace, int timeInSeconds) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+			wait.until(ExpectedConditions.elementToBeClickable(objMap.getLocator(elementName, replace)));
+		} catch (Exception e) {
+
+		}
+	}
+
 	public String getTextOfElement(WebElement element) {
 		return element.getText();
 	}
@@ -55,6 +73,15 @@ public class SeleniumCustomMethods extends CucumberRunner {
 	public WebElement getElement(String elementName) {
 		try {
 			return driver.findElement(objMap.getLocator(elementName));
+		} catch (Exception e) {
+			System.out.println("Failed at element :: " + elementName);
+			return null;
+		}
+	}
+
+	public WebElement getElement(String elementName, String replace) {
+		try {
+			return driver.findElement(objMap.getLocator(elementName, replace));
 		} catch (Exception e) {
 			System.out.println("Failed at element :: " + elementName);
 			return null;

@@ -14,7 +14,7 @@ import helpers.InitializeDrivers;
 import helpers.TextFileUtility;
 
 @CucumberOptions(strict = true, monochrome = true, features = "resources/features", glue = "stepDefinition", plugin = {
-		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Test" }, dryRun = false)
+		"pretty", "html:target/cucumber", "json:target/cucumber.json" }, tags = { "@Phase1,@Phase2,@Phase3" }, dryRun = false)
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 
@@ -66,5 +66,4 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 	private void maximizeWindow() {
 		driver.manage().window().maximize();
 	}
-
 }

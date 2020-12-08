@@ -3,16 +3,256 @@
     "line": 1,
     "elements": [
       {
-        "line": 9,
-        "name": "Fetch weather details from API",
+        "before": [
+          {
+            "result": {
+              "duration": 2760500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Pin city and fetch weather details",
         "description": "",
-        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;2",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 800769600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4924541700,
+              "duration": 23325715700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3073511600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 411698400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Kanpur\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kanpur",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 231053900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Kanpur\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kanpur",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 424900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Pin city and fetch weather details",
+        "description": "",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 772897300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22193757700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1106913200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 369425100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Amritsar\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 748008300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Amritsar\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase1"
+          }
+        ]
+      }
+    ],
+    "name": "Get Weather Details from UI",
+    "description": "",
+    "id": "get-weather-details-from-ui",
+    "keyword": "Feature",
+    "uri": "Phase1.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 557800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Fetch weather details from API",
+        "description": "",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 46800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1918707200,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +275,66 @@
         "tags": [
           {
             "line": 3,
-            "name": "@Test2"
+            "name": "@Phase2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 575100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Fetch weather details from API",
+        "description": "",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 48200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 450296900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the API with \"Amritsar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 28
+                }
+              ],
+              "location": "APIStepDefinition.userLaunchesTheAPIWith(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase2"
           }
         ]
       }
@@ -50,16 +349,38 @@
     "line": 1,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 494100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
         "line": 4,
         "name": "Compare the temperature result of UI \u0026 API",
         "description": "",
         "id": "temperature-comparator;compare-the-temperature-result-of-ui-\u0026-api",
+        "after": [
+          {
+            "result": {
+              "duration": 46300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5879600,
+              "duration": 1688600,
               "status": "passed"
             },
             "line": 5,
@@ -73,7 +394,7 @@
         "tags": [
           {
             "line": 3,
-            "name": "@Test2"
+            "name": "@Phase3"
           }
         ]
       }

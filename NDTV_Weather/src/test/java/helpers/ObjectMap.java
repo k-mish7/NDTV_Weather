@@ -31,6 +31,16 @@ public class ObjectMap {
 		return returnLocator(strElement, locatorType, locatorValue);
 	}
 
+	public By getLocator(String strElement, String replace) throws Exception {
+
+		String locator = objectRepository.getProperty(strElement);
+
+		String locatorType = locator.split(">")[0];
+		String locatorValue = locator.split(">")[1].replace("replaceAttribute", replace);
+
+		return returnLocator(strElement, locatorType, locatorValue);
+	}
+
 	public By returnLocator(String strElement, String locatorType, String locatorValue) {
 
 		System.out.println("Retrieving element '" + strElement + "' with type '" + locatorType + "' and value '"
@@ -53,12 +63,6 @@ public class ObjectMap {
 			break;
 		case "linktext":
 			locator = By.linkText(locatorValue);
-			break;
-		case "partiallinktext":
-			locator = By.partialLinkText(locatorValue);
-			break;
-		case "cssselector":
-			locator = By.cssSelector(locatorValue);
 			break;
 		case "xpath":
 			locator = By.xpath(locatorValue);

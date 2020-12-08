@@ -26,7 +26,6 @@ public class APIStepMethods extends SeleniumCustomMethods {
 		double tempCelsius = tempKelvin - 273.15;
 		double tempFahrenheit = (tempCelsius * 9 / 5) + 32;
 		GlobalVariables._mapAPI.put(city, tempCelsius);
-		GlobalVariables._mapAPI.put(city, tempFahrenheit);
 		System.out.println(GlobalVariables._mapAPI);
 	}
 }
