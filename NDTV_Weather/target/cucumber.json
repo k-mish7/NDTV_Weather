@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2760500,
+              "duration": 3214600,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 800769600,
+              "duration": 845328000,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23325715700,
+              "duration": 21336499100,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 3073511600,
+              "duration": 3577573200,
               "status": "passed"
             },
             "line": 6,
@@ -58,7 +58,319 @@
           },
           {
             "result": {
-              "duration": 411698400,
+              "duration": 270945700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Amritsar\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 945216700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Amritsar\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 380600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Pin city and fetch weather details",
+        "description": "",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 777638100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20272525000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 838578300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322443700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Bhubaneswar\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bhubaneswar",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252533500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Bhubaneswar\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bhubaneswar",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1442100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Pin city and fetch weather details",
+        "description": "",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 796192300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19993089000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 835447400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 294812900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user searches and selects any \"Jaipur\" with temperature information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jaipur",
+                  "offset": 31
+                }
+              ],
+              "location": "SearchAndSelectCityStepDefinition.userSearchesAndSelectsAnyWithTemperatureInformation(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208728300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies that selecting particular \"Jaipur\" reveals the weather details",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jaipur",
+                  "offset": 41
+                }
+              ],
+              "location": "RevealWeatherDetailsStepDefinition.userVerifiesThatSelectingParticularRevealsTheWeatherDetails(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1429000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Pin city and fetch weather details",
+        "description": "",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 803633600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30090691500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user opens NDTV website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userLaunchBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 704427400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user reach the weather section of the website",
+            "match": {
+              "location": "LaunchURLStepDefinition.userReachTheWeatherSectionOfTheWebsite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 339195900,
               "status": "passed"
             },
             "line": 7,
@@ -79,7 +391,7 @@
           },
           {
             "result": {
-              "duration": 231053900,
+              "duration": 229102900,
               "status": "passed"
             },
             "line": 8,
@@ -110,7 +422,7 @@
         "before": [
           {
             "result": {
-              "duration": 424900,
+              "duration": 420900,
               "status": "passed"
             },
             "match": {
@@ -118,14 +430,14 @@
             }
           }
         ],
-        "line": 13,
+        "line": 16,
         "name": "Pin city and fetch weather details",
         "description": "",
-        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;3",
+        "id": "get-weather-details-from-ui;pin-city-and-fetch-weather-details;;6",
         "after": [
           {
             "result": {
-              "duration": 772897300,
+              "duration": 760171700,
               "status": "passed"
             },
             "match": {
@@ -138,7 +450,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22193757700,
+              "duration": 20087151500,
               "status": "passed"
             },
             "line": 5,
@@ -150,7 +462,7 @@
           },
           {
             "result": {
-              "duration": 1106913200,
+              "duration": 976628900,
               "status": "passed"
             },
             "line": 6,
@@ -162,15 +474,15 @@
           },
           {
             "result": {
-              "duration": 369425100,
+              "duration": 327560200,
               "status": "passed"
             },
             "line": 7,
-            "name": "user searches and selects any \"Amritsar\" with temperature information",
+            "name": "user searches and selects any \"Pune\" with temperature information",
             "match": {
               "arguments": [
                 {
-                  "val": "Amritsar",
+                  "val": "Pune",
                   "offset": 31
                 }
               ],
@@ -183,15 +495,15 @@
           },
           {
             "result": {
-              "duration": 748008300,
+              "duration": 208656200,
               "status": "passed"
             },
             "line": 8,
-            "name": "user verifies that selecting particular \"Amritsar\" reveals the weather details",
+            "name": "user verifies that selecting particular \"Pune\" reveals the weather details",
             "match": {
               "arguments": [
                 {
-                  "val": "Amritsar",
+                  "val": "Pune",
                   "offset": 41
                 }
               ],
@@ -224,7 +536,7 @@
         "before": [
           {
             "result": {
-              "duration": 557800,
+              "duration": 1309400,
               "status": "passed"
             },
             "match": {
@@ -239,7 +551,7 @@
         "after": [
           {
             "result": {
-              "duration": 46800,
+              "duration": 37900,
               "status": "passed"
             },
             "match": {
@@ -252,7 +564,184 @@
         "steps": [
           {
             "result": {
-              "duration": 1918707200,
+              "duration": 2035941600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the API with \"Amritsar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amritsar",
+                  "offset": 28
+                }
+              ],
+              "location": "APIStepDefinition.userLaunchesTheAPIWith(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 509800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Fetch weather details from API",
+        "description": "",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 30900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 470039200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the API with \"Bhubaneswar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bhubaneswar",
+                  "offset": 28
+                }
+              ],
+              "location": "APIStepDefinition.userLaunchesTheAPIWith(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 344300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Fetch weather details from API",
+        "description": "",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 48200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 457013500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launches the API with \"Jaipur\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jaipur",
+                  "offset": 28
+                }
+              ],
+              "location": "APIStepDefinition.userLaunchesTheAPIWith(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Phase2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 368500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.startUp(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Fetch weather details from API",
+        "description": "",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 28800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberHooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 489745100,
               "status": "passed"
             },
             "line": 5,
@@ -283,7 +772,7 @@
         "before": [
           {
             "result": {
-              "duration": 575100,
+              "duration": 301200,
               "status": "passed"
             },
             "match": {
@@ -291,14 +780,14 @@
             }
           }
         ],
-        "line": 10,
+        "line": 13,
         "name": "Fetch weather details from API",
         "description": "",
-        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;3",
+        "id": "get-weather-details-from-api;fetch-weather-details-from-api;;6",
         "after": [
           {
             "result": {
-              "duration": 48200,
+              "duration": 40100,
               "status": "passed"
             },
             "match": {
@@ -311,15 +800,15 @@
         "steps": [
           {
             "result": {
-              "duration": 450296900,
+              "duration": 447193800,
               "status": "passed"
             },
             "line": 5,
-            "name": "user launches the API with \"Amritsar\"",
+            "name": "user launches the API with \"Pune\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Amritsar",
+                  "val": "Pune",
                   "offset": 28
                 }
               ],
@@ -352,7 +841,7 @@
         "before": [
           {
             "result": {
-              "duration": 494100,
+              "duration": 459400,
               "status": "passed"
             },
             "match": {
@@ -367,7 +856,7 @@
         "after": [
           {
             "result": {
-              "duration": 46300,
+              "duration": 37800,
               "status": "passed"
             },
             "match": {
@@ -380,7 +869,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1688600,
+              "duration": 692800000,
               "status": "passed"
             },
             "line": 5,

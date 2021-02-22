@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Testng_Cucumber_Suite">
-              <span class="suite-name border-failed">Testng Cucumber Suite</span>
+              <span class="suite-name border-passed">Testng Cucumber Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Testng_Cucumber_Suite" class="hide-methods failed suite-Testng_Cucumber_Suite"> (hide)</a> <!-- hide-methods failed suite-Testng_Cucumber_Suite -->
-                      <a href="#" panel-name="suite-Testng_Cucumber_Suite" class="show-methods failed suite-Testng_Cucumber_Suite"> (show)</a> <!-- show-methods failed suite-Testng_Cucumber_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Testng_Cucumber_Suite" class="hide-methods passed suite-Testng_Cucumber_Suite"> (hide)</a> <!-- hide-methods passed suite-Testng_Cucumber_Suite -->
+                      <a href="#" panel-name="suite-Testng_Cucumber_Suite" class="show-methods passed suite-Testng_Cucumber_Suite"> (show)</a> <!-- show-methods passed suite-Testng_Cucumber_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Testng_Cucumber_Suite">
+                    <div class="method-list-content passed suite-Testng_Cucumber_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Testng_Cucumber_Suite" title="main.CucumberRunner" hash-for-method="feature(Get Weather Details)">feature(Get Weather Details)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Testng_Cucumber_Suite" title="main.CucumberRunner" hash-for-method="feature(Get Weather Details from UI)">feature(Get Weather Details from UI)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Testng_Cucumber_Suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Testng_Cucumber_Suite" title="main.CucumberRunner" hash-for-method="feature(Get Weather Details from API)">feature(Get Weather Details from API)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Testng_Cucumber_Suite" title="main.CucumberRunner" hash-for-method="feature(Temperature Comparator)">feature(Temperature Comparator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Testng_Cucumber_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,37 +126,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Testng_Cucumber_Suite" class="panel Testng_Cucumber_Suite">
-          <div class="suite-Testng_Cucumber_Suite-class-failed">
+          <div class="suite-Testng_Cucumber_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">main.CucumberRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Get Weather Details)">
-                  </a> <!-- feature(Get Weather Details) -->
+                  <a name="feature(Get Weather Details from UI)">
+                  </a> <!-- feature(Get Weather Details from UI) -->
                   <span class="method-name">feature</span>
-                  <span class="parameters">(Get Weather Details)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [200] but found [401]
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.AssertionError: expected [200] but found [401]
-	at stepMethods.APIStepMethods.launchAPI(APIStepMethods.java:21)
-	at stepDefinition.APIStepDefinition.userLaunchesTheAPIWith(APIStepDefinition.java:13)
-	at ?.Given user launches the API with &quot;Kanpur&quot;(Phase2.feature:5)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(Get Weather Details from UI)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Get Weather Details from API)">
+                  </a> <!-- feature(Get Weather Details from API) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Get Weather Details from API)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Temperature Comparator)">
+                  </a> <!-- feature(Temperature Comparator) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Temperature Comparator)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testng_Cucumber_Suite-class-failed -->
+          </div> <!-- suite-Testng_Cucumber_Suite-class-passed -->
         </div> <!-- panel Testng_Cucumber_Suite -->
         <div panel-name="test-xml-Testng_Cucumber_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -207,16 +224,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'main.CucumberRunner')
-data.setCell(0, 3, 1946);
+data.setCell(0, 3, 126163);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'feature')
+data.setCell(1, 2, 'main.CucumberRunner')
+data.setCell(1, 3, 3922);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'feature')
+data.setCell(2, 2, 'main.CucumberRunner')
+data.setCell(2, 3, 696);
 window.suiteTableData['Testng_Cucumber_Suite']= { tableData: data, tableDiv: 'times-div-Testng_Cucumber_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Testng_Cucumber_Suite">
               </div> <!-- times-div-Testng_Cucumber_Suite -->
             </div> <!-- times-div -->
@@ -249,21 +274,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">96 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">feature(Get Weather Details)</span>
-                <span class="method-start">316 ms</span>
+                <span class="method-name">feature(Get Weather Details from UI)</span>
+                <span class="method-start">379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Get Weather Details from API)</span>
+                <span class="method-start">126546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">feature(Temperature Comparator)</span>
+                <span class="method-start">130469 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2265 ms</span>
+                <span class="method-start">131166 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">quit</span>
-                <span class="method-start">2338 ms</span>
+                <span class="method-start">131208 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
